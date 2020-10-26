@@ -5,6 +5,9 @@ project( projection )
 set( CMAKE_BUILD_TYPE "Debug")
 set( CMAKE_CXX_FLAGS "-std=c++11 -O3" )
 
+# Eigen
+include_directories("/usr/include/eigen3")
+
 # opencv 
 find_package( OpenCV 3.2.0 REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
