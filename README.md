@@ -1,5 +1,5 @@
 # Calibration
-This manual is based on the Autoware autonomous driving platform and only used within the lab. This manual is learned from [CSDN LINK](https://blog.csdn.net/AdamShan/article/details/81670732) and [blog link](https://www.cnblogs.com/dlonng/p/13091956.html). If you know Chinese, those blogs are more helpful. Also, if you If you think I am infringing, please contact me to delete it. My email is rwn17@mails.tsinghua.edu.cn.
+This manual is based on the Autoware autonomous driving platform and only used within the lab. This manual is learned from [CSDN LINK](https://blog.csdn.net/AdamShan/article/details/81670732) and [blog link](https://www.cnblogs.com/dlonng/p/13091956.html). If you know Chinese, those blogs are more helpful. Also, If you think I am infringing, please contact me to delete it. My email is rwn17@mails.tsinghua.edu.cn.
 
 ## 1.Environmental setup
 
