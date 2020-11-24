@@ -9,7 +9,7 @@ set( CMAKE_CXX_FLAGS "-std=c++11 -O3" )
 include_directories("/usr/include/eigen3")
 
 # opencv 
-find_package( OpenCV 3.2.0 REQUIRED )
+find_package( OpenCV 3 REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 # pcl 
@@ -17,5 +17,5 @@ find_package( PCL REQUIRED COMPONENT common io )
 include_directories( ${PCL_INCLUDE_DIRS} )
 add_definitions( ${PCL_DEFINITIONS} )
 
-add_executable( projection projection.cpp )
-target_link_libraries( projection ${OpenCV_LIBS} ${PCL_LIBRARIES} )
+add_executable( project project.cpp )
+target_link_libraries( project ${OpenCV_LIBS} ${PCL_LIBRARIES} )

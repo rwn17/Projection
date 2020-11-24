@@ -1,0 +1,30 @@
+%YAML:1.0
+---
+CameraExtrinsicMat: !!opencv-matrix
+   rows: 4
+   cols: 4
+   dt: d
+   data: [ -1.8193101926714306e-02, 3.7616789130924144e-02,
+       -9.9912661270619951e-01, 1.0354554112962719e-01,
+       9.9983205116811280e-01, -1.5235088501783789e-03,
+       -1.8263306867814522e-02, -4.3382791713317315e-01,
+       -2.2091852001864254e-03, -9.9929107676205298e-01,
+       -3.7582754083332892e-02, 4.5814431188294230e-01, 0., 0., 0., 1. ]
+CameraMat: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 1.9022104222730959e+03, 0., 9.3757983772684884e+02, 0.,
+       1.9011331414071644e+03, 4.5267008652184859e+02, 0., 0., 1. ]
+DistCoeff: !!opencv-matrix
+   rows: 1
+   cols: 5
+   dt: d
+   data: [ -1.1607497010948398e-01, 8.0384710152300823e-02,
+       -8.3325507831836002e-04, -1.6888323713925995e-03,
+       2.6960467387676429e-01 ]
+ImageSize: [ 1920, 1080 ]
+ReprojectionError: 2.5822530553367262e-01
+PicPath: "/home/weining/summer_intern/project/1577358499.670220375.jpg"
+PcdPath: "/home/weining/summer_intern/project/1577358499.670220375.pcd"
+OutputPath: "/media/weining/Elements/Dataset/CS55/image_project.jpg"
