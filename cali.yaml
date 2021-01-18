@@ -23,6 +23,6 @@ DistCoeff: !!opencv-matrix
        2.6960467387676429e-01 ]
 ImageSize: [ 1920, 1080 ]
 ReprojectionError: 2.5822530553367262e-01
-PicPath: "/home/will/Desktop/Thesis/Dataset/8ring/usb_cam_left/1604566970.19.jpg"
-PcdPath: "/home/will/Desktop/Thesis/Dataset/8ring/lidar/1604566970.218550444.pcd"
+PicPath: "/home/will/Desktop/Thesis/Dataset/8ring/usb_cam_left/1604567001.73.jpg"
+PcdPath: "/home/will/Desktop/Thesis/Dataset/8ring/lidar/1604567001.720991850.pcd"
 OutputPath: "/home/will/Desktop/Thesis/Dataset/CS55/image_project.jpg"

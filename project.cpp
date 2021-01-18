@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 {
   float max_dist = 0;
   float min_dist = 0;
-  cv::FileStorage file_settings("/home/will/Desktop/Thesis/utils/projection/cali.yaml", cv::FileStorage::READ);
+  cv::FileStorage file_settings("/home/will/Desktop/Thesis/utils/projection/cali2.yaml", cv::FileStorage::READ);
   cv::Mat camera_matrix,distortion_coeff,extrin_matrix;
   cv::Mat R,t_vec;
   std::string pic_path,pcd_path,output_path;
@@ -80,17 +80,32 @@ int main(int argc, char** argv)
     cv::Point3f point_3d = rotation_pts_3d[i];
     float this_dist = point_3d.z;
     double ratio = (this_dist - min_dist) / (max_dist - min_dist);
+	  cv::Scalar color;
     if (point_2d.x > 0 && point_2d.x < image_cols && point_2d.y > 0 && point_2d.y < image_rows)
     {
-      cv::Scalar color(255-(int)(ratio * 255), 0, (int)(ratio * 255));
+		  
+      if (ratio < 0.5){
+		  ratio *= 2;
+		  color = cv::Scalar(255-(ratio * 255), 0, (ratio * 255),1);
+      }
+      
+      else {
+		  ratio = (ratio - 0.5) * 2;
+		  color = cv::Scalar(0, (ratio * 255), 255-(ratio * 255),1);
+	  }
+	  
       cv::rectangle(image_project,cv::Point(point_2d.x + radius,point_2d.y + radius),
                                   cv::Point(point_2d.x - radius,point_2d.y - radius),
                                   color,
                                   1);
     }
   }
+
+  std::vector<int> compression_params;
+  compression_params.push_back(CV_IMWRITE_JPEG_QUALITY);  //选择jpeg
+  compression_params.push_back(100); //在这个填入你要的图片质量
   cv::imshow("project image2", image_project);
-  cv::imwrite(output_path, image_project);
+  cv::imwrite(output_path, image_project,compression_params);
   cv::waitKey(100000);
 
   return 0;
