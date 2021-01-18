@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 {
   float max_dist = 0;
   float min_dist = 0;
-  cv::FileStorage file_settings("/home/will/Desktop/Thesis/utils/projection/cali2.yaml", cv::FileStorage::READ);
+  cv::FileStorage file_settings("/home/will/Desktop/Thesis/utils/projection/cali.yaml", cv::FileStorage::READ);
   cv::Mat camera_matrix,distortion_coeff,extrin_matrix;
   cv::Mat R,t_vec;
   std::string pic_path,pcd_path,output_path;
