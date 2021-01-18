@@ -10,3 +10,7 @@ Project Lidar points into camera image. The lidar point is colored according to 
     make
     ./project
  ```
+
+Projection result is shown as:
+
+![image](https://github.com/rwn17/Calibration/blob/master/image_project.jpg)
