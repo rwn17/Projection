@@ -4,7 +4,8 @@ Project Lidar points into camera image. The lidar point is colored according to 
 
 ```
     git clone https://github.com/rwn17/Calibration.git
-    cd projection
+    cd Projection/
+    CHANGE THE FILE_PATH IN .YAML
     mkdir build
     cd build
     cmake ..
